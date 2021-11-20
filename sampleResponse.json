@@ -1,0 +1,50 @@
+{
+    "_": "Message",
+    "message_id": 57,
+    "from_user": {
+        "_": "User",
+        "id": 1664758714,
+        "is_self": false,
+        "is_contact": false,
+        "is_mutual_contact": false,
+        "is_deleted": false,
+        "is_bot": false,
+        "is_verified": false,
+        "is_restricted": false,
+        "is_scam": false,
+        "is_fake": false,
+        "is_support": false,
+        "first_name": "Asiri",
+        "last_name": "H",
+        "status": "recently",
+        "username": "asirihewage",
+        "language_code": "en"
+    },
+    "date": "2021-11-06 18:04:18",
+    "chat": {
+        "_": "Chat",
+        "id": 1664758714,
+        "type": "private",
+        "is_verified": false,
+        "is_restricted": false,
+        "is_scam": false,
+        "is_fake": false,
+        "is_support": false,
+        "username": "asirihewage",
+        "first_name": "Asiri",
+        "last_name": "H"
+    },
+    "mentioned": false,
+    "scheduled": false,
+    "from_scheduled": false,
+    "text": "/start",
+    "entities": [
+        {
+            "_": "MessageEntity",
+            "type": "bot_command",
+            "offset": 0,
+            "length": 6
+        }
+    ],
+    "outgoing": false
+}

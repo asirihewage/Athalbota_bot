@@ -1,0 +1,7 @@
+pyrogram
+Flask
+python-telegram-bot
+requests
+pymongo
+configparser
+dnspython
