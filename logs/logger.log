@@ -1,0 +1,17 @@
+2021-11-21 22:39:10,340 * pyrogram.dispatcher * ERROR * [dispatcher.py:230        handler_worker() ] [400 MESSAGE_EMPTY]: The message sent is empty or contains invalid characters (caused by "messages.SendMessage")
+Traceback (most recent call last):
+  File "F:\Anaconda\lib\site-packages\pyrogram\dispatcher.py", line 217, in handler_worker
+    await handler.callback(self.client, *args)
+  File "G:/Bots/Athalbota_bot/Main.py", line 180, in helpTopics
+    await app.send_message(message.from_user.id, Translations.HELP_TEXT_GUEST[translation])
+  File "F:\Anaconda\lib\site-packages\pyrogram\methods\messages\send_message.py", line 135, in send_message
+    entities=entities
+  File "F:\Anaconda\lib\site-packages\pyrogram\methods\advanced\send.py", line 81, in send
+    else self.sleep_threshold)
+  File "F:\Anaconda\lib\site-packages\pyrogram\session\session.py", line 425, in send
+    return await self._send(data, timeout=timeout)
+  File "F:\Anaconda\lib\site-packages\pyrogram\session\session.py", line 395, in _send
+    RPCError.raise_it(result, type(data))
+  File "F:\Anaconda\lib\site-packages\pyrogram\errors\rpc_error.py", line 83, in raise_it
+    is_unknown=False)
+pyrogram.errors.exceptions.bad_request_400.MessageEmpty: [400 MESSAGE_EMPTY]: The message sent is empty or contains invalid characters (caused by "messages.SendMessage")

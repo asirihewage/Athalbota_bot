@@ -9,13 +9,13 @@ Athalbota_bot.session
 .idea/
 
 # logs
-/logs
+/logs/logger.log.*
 
 # Session data
 /data
 
 #configurations
-/config
+/config/configs.init
 config.ini
 
 # Distribution / packaging
