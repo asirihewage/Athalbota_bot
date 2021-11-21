@@ -1,2 +1,2 @@
-worker: python3 bot.py
-web: gunicorn api:api
+worker: python3 Main.py
+web: gunicorn API:API
