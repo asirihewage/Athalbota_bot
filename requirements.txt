@@ -5,3 +5,4 @@ requests
 pymongo
 configparser
 dnspython
+gunicorn
