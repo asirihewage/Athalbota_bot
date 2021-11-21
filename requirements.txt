@@ -6,3 +6,4 @@ pymongo
 configparser
 dnspython
 gunicorn
+tgcrypto
