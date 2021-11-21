@@ -1,2 +1,2 @@
 worker: python3 Main.py
-web: gunicorn API:API
+web: gunicorn api:api
