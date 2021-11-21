@@ -1,6 +1,6 @@
 import pymongo
-from config.Configs import Configs
-from logs import Logs
+from utils.Configs import Configs
+from utils.Logs import log
 
 
 def connect():

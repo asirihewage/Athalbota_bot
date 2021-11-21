@@ -6,6 +6,8 @@ __pycache__/
 # bot session
 bot.session
 
+.idea/
+
 # logs
 /logs
 

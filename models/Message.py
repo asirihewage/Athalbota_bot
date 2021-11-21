@@ -1,4 +1,5 @@
-from logs import Logs
+from utils.Configs import Configs
+from utils.Logs import log
 
 
 class Message:
@@ -42,8 +43,26 @@ class Message:
                     messagesCollection.insert_one(self.jsonObj)
                     return self
             else:
-                Logs.log("Database connection error")
+                log("Database connection error")
                 return False
         except Exception as er:
-            Logs.log(er)
+            log(er)
             return False
+
+    def getAllUsers(self):
+        try:
+            if self.database:
+                messagesCollection = self.database.get_collection("messages")
+                if messagesCollection.count_documents({}) and messagesCollection.count_documents({}) > 0:
+                    return messagesCollection.find({})
+                elif messagesCollection.count_documents({}) and messagesCollection.count_documents({}) <= 0:
+                    log("No chats")
+                    return None
+                else:
+                    log("Something went wrong when fetching groups")
+            else:
+                log("Database connection error")
+                return None
+        except Exception as e:
+            log(e)
+            return None
